@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>About Me - Jasper Tuyor</title>
+<style>
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background: #f5f5f5;
+  color: #333;
+}
+
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fdfdfd;
+  border-bottom: 2px solid #ddd;
+  z-index: 1000;
+  padding: 10px 0;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  margin: 0 15px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #393c44;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: 0.3s;
+}
+nav ul li a.active {
+  color: #9c9aa5;
+  border-bottom: 2px solid #007bff;
+  border-radius: 3px;
+}
+
+
+#hero {
+  height: 100vh;
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  padding: 0 20px;
+}
+#hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+#hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  
+}
+#hero img {
+  max-width: 300px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+  border-bottom: 1px solid #eee;
+}
+section h2 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+section p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+section img {
+  max-width: 200px;
+  border-radius: 10px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+  background: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+}
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+.gallery img {
+  width: 48%;
+  border-radius: 8px;
+}
+
+.close {
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+section::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+</style>
+</head>
+<body>
+
+
+<nav>
+  <ul>
+    <li><a href="#hero" class="nav-link active">About Me</a></li>
+    <li><a href="education.html" class="nav-link">Education</a></li>
+    <li><a href="favorites.html" class="nav-link">Favorites</a></li>
+    <li><a href="hobbies.html" class="nav-link">Hobbies</a></li>
+    <li><a href="contact.html" class="nav-link">Profile/Contact</a></li>
+  </ul>
+</nav>
+
+<section id="hero">
+  <h1>Jasper Tuyor</h1>
+  <p>Welcome to my autobiography! Explore my journey, achievements, favorites, and hobbies. </p>
+  <img src="images/profile.jpg">
+
+</section>
+
+
+<section id="my-childhood">
+  <h2 data-modal="modal1">About my life</h2>
+  <img src="images/childhood.png">
+  <p>My childhood was full of great memories. Click the "My Childhood" to see my childhood memories.
+</p>
+
+</section>
+
+
+<section id="skills">
+  <h2 data-modal="modal3">Skills & Hobbies</h2>
+  <img src="images/takraw.jpg">
+  
+</d>
+  <p>This game makes my day and brings a lot of fun. I have a lot of friends in sepak takraw community,
+     and when i'm bored, i play mobile legend and crossfire.</p>
+</section>
+
+
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>My Childhood</h2>
+    <div class="gallery">
+      <img src="images/childhood2.png">
+      <img src="images/childhood1.jpg">
+    </div>
+
+    
+    <p> Actually, I'm friendly and had many friends.
+   We played together like racing cars and toy guns 
+   "gera-gera" and enjoyed games like
+ "patintero". I also had the experience 
+  of joining the boyscout when i was grade 4.</p> 
+
+  <h2>My Teenage</h2>
+    <div class="gallery">
+      <img src="images/ros.jpg">
+      <img src="images/ML.jpg">
+    </div>
+     <p>  My teenage life was different, I became addicted to 
+      computer games like Rules of Survival and Crossfire. 
+      During the COVID-19 pandemic, I started play a Mobile games "Mobile Legend".</p> 
+
+  <h2>My Adulthood</h2>
+  <div class="gallery">
+      <img src="images/Ceap2025.jpg">
+      <img src="images/jogging.jpg">
+    </div>
+<p>
+In my current life, I focus on healthy activities such jogging, playing Sepak Takraw
+and swimming. I am the Sepak Takraw player also in SMCC since last year,
+and we're 3rd place on CEAP Regional 2025, and right now i focus on my dreams and
+improving myself to be better version of me.
+
+</p>
+    
+   
+  </div>
+</div>
+
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Skills</h2>
+    <div class="gallery">
+      <img src="images/takraw.jpg">
+      <img src="images/takraw2.jpg">
+
+    </div>
+    
+    
+      <h2>Hobbies</h2>
+    <div class="gallery">
+      <img src="images/ml1.jpg">
+      <img src="images/cf1.jpg">
+    </div>
+    
+  </div>
+</div>
+
+<footer>
+  Jasper Tuyor Bachelor of Science in Computer Science Student
+</footer>
+
+
+<script>
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav-link');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 80;
+    if (pageYOffset >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if(link.getAttribute('href') === '#' + current){
+      link.classList.add('active');
+    }
+  });
+});
+
+
+const modalLinks = document.querySelectorAll('h2[data-modal]');
+modalLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    const modal = document.getElementById(link.dataset.modal);
+    modal.style.display = 'block';
+  });
+});
+
+const closeButtons = document.querySelectorAll('.close');
+closeButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    btn.closest('.modal').style.display = 'none';
+  });
+});
+
+window.addEventListener('click', e => {
+  if(e.target.classList.contains('modal')) {
+    e.target.style.display = 'none';
+  }
+});
+</script>
+
+</body>
+</html>
